@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container d-flex align-items-center justify-content-center">
+    <!-- Foto de Perfil (à esquerda) -->
+    <div class="profile-photo-container me-4">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Foto de Perfil" class="profile-photo">
+    </div>
+
+    <!-- Texto de Boas-Vindas (à direita) -->
+    <div class="text-center">
+        <h3 class="display-4">Bem-vindo ao Meu Portfólio</h3>
+        <p class="lead">Sou um estudante de TI apaixonado por programação e tecnologia.</p>
+        <a href="/projects" class="btn btn-primary btn-lg mt-3">Veja Meus Projetos</a>
+    </div>
+</div>
+{% endblock %}
